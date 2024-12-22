@@ -249,8 +249,8 @@ body {
   opacity: 1;
 }
 
-.arrow {
-  border: solid white;
+#page5 .arrow {
+  border: solid black;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
@@ -319,8 +319,8 @@ body {
   opacity: 1;
 }
 
-.arrow {
-  border: solid white;
+#page6 .arrow {
+  border: solid black;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
@@ -357,6 +357,18 @@ body {
 /* page7 */
 
 #page7 .content {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  text-align: right;
+  height: 80vh;
+  margin: 0;
+  direction: rtl;
+
+ 
+}
+
+/* page8 */
+
+#page8 .content {
   font-family: "IBM Plex Sans Arabic", sans-serif;
   text-align: right;
   height: 80vh;
