@@ -1,5 +1,11 @@
-html{
+html {
   scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
 }
 
 #page1 h1 {
@@ -8,8 +14,6 @@ html{
   color: #fff;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
-
-
 
 /* استایل اسلاید صفحه دوم */
 #page2 .continer {
@@ -104,7 +108,8 @@ html{
 }
 
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px) translateX(-50%);
   }
   40% {
@@ -116,7 +121,8 @@ html{
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
     opacity: 0.8;
   }
@@ -125,7 +131,6 @@ html{
     opacity: 1;
   }
 }
-
 
 /* page4 */
 #page4 .content {
@@ -173,7 +178,8 @@ html{
 }
 
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px) translateX(-50%);
   }
   40% {
@@ -185,7 +191,8 @@ html{
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
     opacity: 0.8;
   }
@@ -194,3 +201,157 @@ html{
     opacity: 1;
   }
 }
+
+/* page5 */
+
+#page5 .content {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  text-align: right;
+  height: 80vh;
+  margin: 0;
+  direction: rtl;
+  overflow-y: auto;
+  position: relative;
+}
+
+#page5 .content::-webkit-scrollbar {
+  display: none;
+}
+
+#page5 .content {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+#page5 .scroll-indicator {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 2s ease-in-out infinite, pulse 2s ease-in-out infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#page5 .content:hover .scroll-indicator,
+#page5 .content:focus .scroll-indicator {
+  opacity: 1;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0px) translateX(-50%);
+  }
+  40% {
+    transform: translateY(-10px) translateX(-50%);
+  }
+  60% {
+    transform: translateY(-5px) translateX(-50%);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+}
+
+/* page6 */
+
+#page6 .content {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  text-align: right;
+  height: 80vh;
+  margin: 0;
+  direction: rtl;
+  overflow-y: auto;
+  position: relative;
+}
+
+#page6 .content::-webkit-scrollbar {
+  display: none;
+}
+
+#page6 .content {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+#page6 .scroll-indicator {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 2s ease-in-out infinite, pulse 2s ease-in-out infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#page6 .content:hover .scroll-indicator,
+#page6 .content:focus .scroll-indicator {
+  opacity: 1;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0px) translateX(-50%);
+  }
+  40% {
+    transform: translateY(-10px) translateX(-50%);
+  }
+  60% {
+    transform: translateY(-5px) translateX(-50%);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+}
+
+
+/* page7 */
+
+#page7 .content {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  text-align: right;
+  height: 80vh;
+  margin: 0;
+  direction: rtl;
+
+ 
+}
+
