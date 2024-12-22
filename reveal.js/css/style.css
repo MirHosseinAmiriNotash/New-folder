@@ -1,3 +1,14 @@
+.reveal .slides section {
+  overflow-y: auto; /* فعال‌سازی اسکرول عمودی */
+  max-height: 100%; /* محدود کردن ارتفاع */
+  scrollbar-width: none; /* حذف اسکرول‌بار در فایرفاکس */
+  -ms-overflow-style: none; /* حذف اسکرول‌بار در اینترنت اکسپلورر */
+}
+
+.reveal .slides section::-webkit-scrollbar {
+  display: none; /* حذف اسکرول‌بار در کروم، سافاری و اج */
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -355,3 +366,16 @@ body {
  
 }
 
+
+
+
+
+@media (max-width: 768px) {
+  .reveal {
+    font-size: 1.5rem; /* کاهش اندازه فونت */
+  }
+
+  .reveal .slides {
+    padding: 10px; /* کاهش حاشیه‌ها */
+  }
+}
