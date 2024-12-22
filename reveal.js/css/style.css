@@ -376,8 +376,18 @@ body {
   direction: rtl;
 
  
-}
+}  
 
+/* page9 */
+#page9 .content {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  text-align: right;
+  height: 80vh;
+  margin: 0;
+  direction: rtl;
+
+ 
+}
 
 
 
