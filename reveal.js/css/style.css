@@ -1,12 +1,12 @@
 .reveal .slides section {
-  overflow-y: auto; /* فعال‌سازی اسکرول عمودی */
-  max-height: 100%; /* محدود کردن ارتفاع */
-  scrollbar-width: none; /* حذف اسکرول‌بار در فایرفاکس */
-  -ms-overflow-style: none; /* حذف اسکرول‌بار در اینترنت اکسپلورر */
+  overflow-y: auto; 
+  max-height: 100%; 
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
 }
 
 .reveal .slides section::-webkit-scrollbar {
-  display: none; /* حذف اسکرول‌بار در کروم، سافاری و اج */
+  display: none; 
 }
 
 html {
@@ -26,7 +26,7 @@ body {
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* استایل اسلاید صفحه دوم */
+/*page2*/
 #page2 .continer {
   display: flex;
   justify-content: center;
@@ -83,7 +83,7 @@ body {
   height: 80vh;
   margin: 0;
   direction: rtl;
-  position: relative; /* برای موقعیت دهی scroll-indicator */
+  position: relative; 
 }
 
 #page3 .content::-webkit-scrollbar {
@@ -152,7 +152,7 @@ body {
   height: 80vh;
   margin: 0;
   direction: rtl;
-  position: relative; /* برای موقعیت دهی scroll-indicator */
+  position: relative; 
 }
 
 #page4 .content::-webkit-scrollbar {
@@ -181,6 +181,76 @@ body {
 
 .arrow {
   border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0px) translateX(-50%);
+  }
+  40% {
+    transform: translateY(-10px) translateX(-50%);
+  }
+  60% {
+    transform: translateY(-5px) translateX(-50%);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+}
+
+/* page4 */
+
+#page4 .content {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  text-align: right;
+  height: 80vh;
+  margin: 0;
+  direction: rtl;
+  overflow-y: auto;
+  position: relative;
+}
+
+#page4 .content::-webkit-scrollbar {
+  display: none;
+}
+
+#page4 .content {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+#page4 .scroll-indicator {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 2s ease-in-out infinite, pulse 2s ease-in-out infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#page4 .content:hover .scroll-indicator,
+#page4 .content:focus .scroll-indicator {
+  opacity: 1;
+}
+
+#page4 .arrow {
+  border: solid black;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
@@ -283,6 +353,7 @@ body {
   }
 }
 
+
 /* page6 */
 
 #page6 .content {
@@ -291,68 +362,9 @@ body {
   height: 80vh;
   margin: 0;
   direction: rtl;
-  overflow-y: auto;
-  position: relative;
-}
 
-#page6 .content::-webkit-scrollbar {
-  display: none;
+ 
 }
-
-#page6 .content {
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-#page6 .scroll-indicator {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  animation: bounce 2s ease-in-out infinite, pulse 2s ease-in-out infinite;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-#page6 .content:hover .scroll-indicator,
-#page6 .content:focus .scroll-indicator {
-  opacity: 1;
-}
-
-#page6 .arrow {
-  border: solid black;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-  transform: rotate(45deg);
-  transition: transform 0.3s ease-in-out;
-}
-
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(0px) translateX(-50%);
-  }
-  40% {
-    transform: translateY(-10px) translateX(-50%);
-  }
-  60% {
-    transform: translateY(-5px) translateX(-50%);
-  }
-}
-
-@keyframes pulse {
-  0%,
-  100% {
-    transform: scale(1);
-    opacity: 0.8;
-  }
-  50% {
-    transform: scale(1.5);
-    opacity: 1;
-  }
-}
-
 
 /* page7 */
 
@@ -364,22 +376,10 @@ body {
   direction: rtl;
 
  
-}
-
-/* page8 */
-
-#page8 .content {
-  font-family: "IBM Plex Sans Arabic", sans-serif;
-  text-align: right;
-  height: 80vh;
-  margin: 0;
-  direction: rtl;
-
- 
 }  
 
-/* page9 */
-#page9 .content {
+/* page8 */
+#page8 .content {
   font-family: "IBM Plex Sans Arabic", sans-serif;
   text-align: right;
   height: 80vh;
@@ -394,10 +394,10 @@ body {
 
 @media (max-width: 768px) {
   .reveal {
-    font-size: 1.5rem; /* کاهش اندازه فونت */
+    font-size: 1.5rem; 
   }
 
   .reveal .slides {
-    padding: 10px; /* کاهش حاشیه‌ها */
+    padding: 10px; 
   }
 }
