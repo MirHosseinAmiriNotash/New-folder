@@ -163,6 +163,67 @@ html{
   opacity: 1;
 }
 
+#page9 .content {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  overflow-y: auto;
+  padding: 20px;
+  text-align: right;
+  height: 80vh;
+  margin: 0;
+  direction: rtl;
+}
+
+#page10 .content {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  overflow-y: auto;
+  padding: 20px;
+  text-align: right;
+  height: 80vh;
+  margin: 0;
+  direction: rtl;
+}
+
+#page11 .content {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  overflow-y: auto;
+  padding: 20px;
+  text-align: right;
+  height: 80vh;
+  margin: 0;
+  direction: rtl;
+}
+
+#page12 .content {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  overflow-y: auto;
+  padding: 20px;
+  text-align: right;
+  height: 80vh;
+  margin: 0;
+  direction: rtl;
+}
+
+#page13 .content {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  overflow-y: auto;
+  padding: 20px;
+  text-align: right;
+  height: 80vh;
+  margin: 0;
+  direction: rtl;
+}
+
+#page14 .content {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  overflow-y: auto;
+  padding: 20px;
+  text-align: right;
+  height: 80vh;
+  margin: 0;
+  direction: rtl;
+}
+
+
 .arrow {
   border: solid white;
   border-width: 0 3px 3px 0;
