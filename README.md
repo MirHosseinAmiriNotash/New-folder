@@ -16,7 +16,7 @@ Make sure you have the following installed:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/your-repository-name.git
+   git clone [https://github.com/your-username/your-repository-name.git](https://github.com/MirHosseinAmiriNotash/gesture-and-movement-HCI-presentation.git)
    ```
 
 2. **Navigate to the project folder**:
